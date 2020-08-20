@@ -90,6 +90,7 @@ button {
 body {
   font-family: "Montserrat";
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 html,
@@ -345,6 +346,7 @@ section {
 }
 
 .main-header__title {
+  width: 50%;
   font-size: calc(40px + 60 * ((100vw - 320px) / 1600));
   margin: 0 auto;
   color: #fff;
@@ -2259,6 +2261,10 @@ section {
     font-size: 16px;
   }
 
+  .main-header__title {
+    width: 50%;
+  }
+
   .main-header__footer {
     display: none;
   }
@@ -2304,8 +2310,12 @@ section {
 }
 
 @media (max-width: 576px) {
+  .main-header__title {
+    width: 100%;
+  }
+
   .main-header__button {
-    width: 40%;
+    width: 60%;
   }
 
   .about__card-list {
@@ -2460,6 +2470,10 @@ section {
 
   .main-footer__copywritter-wraper {
     padding: 4% 0;
+  }
+
+  .main-footer__copywritter-text {
+    font-size: 12px;
   }
 }
 
